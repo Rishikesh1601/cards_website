@@ -1,3 +1,91 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* this is for the arrows - start */
+.arrow {
+  position:absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 2;
+}
+
+.arrow.prev {
+  left: 0;
+  background-color: white;
+  color: gray;
+  padding:5px;
+  height:37px;
+  width: 37px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.arrow.next {
+  right: 0;
+  background-color: white;
+  color: gray;
+  padding:5px;
+  height:37px;
+  width: 37px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+
+.z-index-1 {
+  z-index: 1;
+  position: relative;
+}
+
+
+
+
+
+@media(max-width:768px){
+  .featured-item{
+      /* margin-left: 40px; */
+      /* margin-right:40px; */
+      width:226px;
+  }
+  .arrow.next{
+      background-color: white;
+      color: gray;
+      padding:5px;
+      /* border-radius: 50px; */
+  }
+  .arrow.prev{
+      background-color: white;
+      color: gray;
+      padding:5px;
+      /* border-radius: 50px; */
+  }
+  .arrow{
+      position: absolute;
+      top:50%;
+  }
+}
+
+/* this is for the arrows - end */
+
+/* slick image changes -start */
+.slickImage{
+  max-width: 391px;
+  width:391px;
+  height:552px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.changeBg{
+  background: linear-gradient(rgba(255, 255, 255, 0) 50.13%, rgb(0, 0, 0) 100%);
+}
+
+/* slick image change -end */
+
+
