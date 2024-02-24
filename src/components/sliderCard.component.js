@@ -19,9 +19,11 @@ const SliderCardComponent = () => {
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
+        arrows: true,
         nextArrow: <SampleNextArrow />,
         prevArrow: <SamplePrevArrow />,
-        centerMode: true, // Enable center mode
+        centerMode: true,
+        autoplay:false,
         responsive: [
           {
             breakpoint: 1024,
@@ -33,9 +35,12 @@ const SliderCardComponent = () => {
           {
             breakpoint: 768,
             settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1,
-              dots: false,
+                slidesToShow: 1,
+                arrows: false,
+                dots: false,
+                autoplay: true,
+                swipe: true,
+                centerMode:false
             },
           },
           {

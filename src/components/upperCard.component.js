@@ -33,7 +33,6 @@ const UpperCardComponent = () => {
       paragraphText: 'Launched in 2003, Emirates Living is a modern lifestyle community focused on outdoor leisure. Emirates Living offers a serene nature-filled sanctuary, with 8,659 premium villas nestled within 52.2 million square feet of lush greenery.',
       name: 'Emirates Living '
     },
-    // Add more card objects as needed
   ];
 
   return (

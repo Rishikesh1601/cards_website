@@ -44,6 +44,17 @@
 }
 
 
+@media(max-width:768px){
+  .card-container{
+    width: 311px !important;
+    height: 446px !important;
+  }
+  .sliderCardMob{
+    width: 311px !important;
+    height: 446px !important;
+  }
+}
+
 
 
 
